@@ -441,7 +441,7 @@ footer .copyright {
 
 
 /***** Modal *****/
-
+/*
 .modal-backdrop.in {
     filter: alpha(opacity=7);
     opacity: 0.7;
@@ -476,7 +476,7 @@ footer .copyright {
     font-weight: 300;
     text-shadow: none;
     opacity: 1;
-}
+} */
 
 .video-link {
     padding-top: 70px;
@@ -496,9 +496,10 @@ a .video-link-text {
 a:hover .video-link-text,
 a:focus .video-link-text {
     outline: 0;
-    color: #fff;
+    color: #fff !important;
     opacity: 1;
-    border-bottom: 1px dotted #fff;
+
+    border-bottom: 1px dotted #fff !important;
 }
 
 a .video-link-icon {
@@ -532,4 +533,26 @@ a:focus .video-link-icon {
     outline: 0;
     background: #fff;
     color: #e89a3e;
+}
+
+.modal-dialog {
+      max-width: 800px;
+      margin: 100px auto;
+  }
+
+
+
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
 }

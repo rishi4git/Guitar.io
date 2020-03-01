@@ -11,6 +11,7 @@
   <title>Armstrum</title>
 
   <!-- Bootstrap core CSS -->
+
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
@@ -63,13 +64,31 @@
 conducted <br/>by Makers’ Asylum.
             </span>
 
-            <a  href="#" class="launch-modal" data-modal-id="modal-video">
-							<span style="text-align:center" class="video-link-icon"><i class="fa fa-play"></i></span>
-							<span class="video-link-text">Watch complete process</span>
-						</a>
 
 
+              <a style="text-decoration: none;" href="#" class="video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/yf9-HveGrO0"  data-target="#myModal">
+                <span style="text-align:center" class="video-link-icon"><i class="fa fa-play"></i></span>
+                <span class="video-link-text">Watch complete process</span>
+              </a>
 
+              <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+
+                  <div class="modal-body">
+
+                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- 16:9 aspect ratio -->
+            <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay" allowfullscreen></iframe>
+            </div>
+            </div>
+            </div>
+            </div>
 
 
           </div>
@@ -77,7 +96,7 @@ conducted <br/>by Makers’ Asylum.
       </div>
     </div>
     <!-- MODAL -->
-    <div class="modal fade" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="modal-video-label">
+    <!-- <div class="modal fade" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="modal-video-label">
       <div class="modal-dialog" role="document">
           <div class="modal-content">
               <div class="modal-header">
@@ -95,7 +114,7 @@ conducted <br/>by Makers’ Asylum.
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
   </header>
 
